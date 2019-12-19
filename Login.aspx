@@ -8,8 +8,8 @@
     <title></title>
     <style type="text/css">
         .auto-style1 {
-            width: 293px;
-            margin-left: 320px;
+            width: 360px;
+            margin-left: 75px;
         }
     </style>
 </head>
@@ -20,8 +20,6 @@
             <br />
             <asp:Label ID="MensajeBienvenidaLabel" runat="server" Font-Size="XX-Large" Text="BIENVENIDO"></asp:Label>
             <br />
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-            <br />
             <br />
             <asp:Label ID="UsuarioLabel" runat="server" Text="E-Mail"></asp:Label>
             <br />
@@ -30,6 +28,8 @@
             <asp:Label ID="ContrasenaLabel" runat="server" Text="Contraseña"></asp:Label>
             <br />
             <asp:TextBox ID="ContrasenaTB" runat="server" TextMode="Password" Width="275px"></asp:TextBox>
+            <br />
+            <asp:Label ID="Label1" runat="server"></asp:Label>
             <br />
             <br />
             <asp:Button ID="InicioSesionBtn" runat="server" Height="44px" Text="INICIAR SESIÓN" Width="280px" />

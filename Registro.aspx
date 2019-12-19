@@ -36,27 +36,35 @@
         <asp:TextBox ID="TextBox4" runat="server" style="margin-left: 0px"></asp:TextBox>
         <br />
         <br />
-        <asp:Label ID="Label6" runat="server" Text="Contraseña:"></asp:Label>
+        <asp:Label ID="Label9" runat="server" Text="Telefono:"></asp:Label>
         <br />
         <asp:TextBox ID="TextBox5" runat="server" style="margin-left: 0px"></asp:TextBox>
         <br />
         <br />
-        <asp:Label ID="Label7" runat="server" Text="Confirmar Contraseña:"></asp:Label>
+        <asp:Label ID="Label6" runat="server" Text="Contraseña:"></asp:Label>
         <br />
         <asp:TextBox ID="TextBox6" runat="server" style="margin-left: 0px"></asp:TextBox>
         <br />
+        <br />
+        <asp:Label ID="Label7" runat="server" Text="Confirmar Contraseña:"></asp:Label>
+        <br />
+        <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+&nbsp;
+        <br />
+        <br />
+        <asp:Label ID="Label10" runat="server" Text="Tipo Usuario:"></asp:Label>
+        <br />
+        <asp:DropDownList ID="DropDownList1" runat="server">
+            <asp:ListItem Value="1">Cliente</asp:ListItem>
+            <asp:ListItem Value="0">Administrador</asp:ListItem>
+        </asp:DropDownList>
         <br />
         <br />
         <asp:Button ID="Button1" runat="server" Text="Registrar" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="Button2" runat="server" Text="Cancelar" />
         <br />
-        <asp:GridView ID="GridView1" runat="server">
-        </asp:GridView>
-        <asp:GridView ID="GridView2" runat="server" DataSourceID="SqlDataSource1">
-        </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
-        <asp:Label ID="Label8" runat="server" Text="Label"></asp:Label>
+        <asp:Label ID="Label8" runat="server"></asp:Label>
     </form>
 </body>
 </html>

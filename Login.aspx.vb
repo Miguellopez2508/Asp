@@ -4,9 +4,6 @@ Public Class WebForm2
     Inherits System.Web.UI.Page
 
     Dim contrasenabase As String
-    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
-    End Sub
     Public Function conectar() As MySqlConnection
         Try
             Dim conexion As New MySqlConnectionStringBuilder()
@@ -19,7 +16,7 @@ Public Class WebForm2
             con.Open()
             Return con
         Catch ex As Exception
-            MsgBox("no se oudo conectar")
+            MsgBox("No se pudo conectar con la base de datos")
             Return Nothing
         End Try
     End Function
@@ -27,7 +24,7 @@ Public Class WebForm2
         Dim connection As MySqlConnection
         connection = conectar()
         Dim consulta As String
-        consulta = "select password from usuario where email like '%" & Me.UsuarioTB.Text & "%' "
+        consulta = "select password from usuario where email = '" & UsuarioTB.Text & "'"
         Dim comando As New MySqlCommand(consulta)
         comando.Connection = connection
         Dim resultado As MySqlDataReader
@@ -37,12 +34,16 @@ Public Class WebForm2
         End While
 
         If contrasenabase = Me.ContrasenaTB.Text Then
-            Response.Redirect("WebForm2.aspx")
+            Response.Redirect("WebForm3.aspx")
         Else
-            MsgBox("Sos gay")
+            MsgBox("Usuario o contraseña incorrecta")
             Me.ContrasenaTB.Text = ""
         End If
 
+    End Sub
+
+    Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Response.Redirect("Registro.aspx")
     End Sub
 
 End Class
