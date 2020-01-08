@@ -34,34 +34,24 @@ Public Class WebForm2
             contrasenabase = resultado(0)
         End While
 
-        Dim hash As String = getMd5Hash(UsuarioTB.Text)
+        Dim hash As String = getMd5Hash(ContrasenaTB.Text)
 
-        If verifyMd5Hash(contrasenabase, hash) Then
-            Response.Redirect("WebForm3.aspx")
-        Else
-            MsgBox("Usuario o contraseña incorrecta")
-            Me.ContrasenaTB.Text = ""
-        End If
-
+        Try
+            If contrasenabase.Equals(hash) Then
+                Response.Redirect("WebForm3.aspx")
+            Else
+                MsgBox("Contraseña incorrecta")
+                Me.UsuarioTB.Text = ""
+                Me.ContrasenaTB.Text = ""
+            End If
+        Catch
+            Label1.Text = "Usuario no existe"
+        End Try
     End Sub
 
     Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Response.Redirect("Registro.aspx")
     End Sub
-
-    Function verifyMd5Hash(ByVal input As String, ByVal hash As String) As Boolean
-
-        Dim hashOfInput As String = getMd5Hash(input)
-
-        Dim comparer As StringComparer = StringComparer.OrdinalIgnoreCase
-
-        If 0 = comparer.Compare(hashOfInput, hash) Then
-            Return True
-        Else
-            Return False
-        End If
-
-    End Function
 
     Function getMd5Hash(ByVal input As String) As String
 

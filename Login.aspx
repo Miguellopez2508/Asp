@@ -8,7 +8,7 @@
     <title></title>
     <style type="text/css">
         .auto-style1 {
-            width: 360px;
+            width: 475px;
             margin-left: 75px;
         }
     </style>
@@ -24,15 +24,17 @@
             <asp:Label ID="UsuarioLabel" runat="server" Text="E-Mail"></asp:Label>
             <br />
             <asp:TextBox ID="UsuarioTB" runat="server" Width="277px"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="UsuarioTB" ErrorMessage="Campo obligatorio" ValidationGroup="login"></asp:RequiredFieldValidator>
             <br />
             <asp:Label ID="ContrasenaLabel" runat="server" Text="Contraseña"></asp:Label>
             <br />
             <asp:TextBox ID="ContrasenaTB" runat="server" TextMode="Password" Width="275px"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="ContrasenaTB" ErrorMessage="Campo obligatorio" ValidationGroup="login"></asp:RequiredFieldValidator>
             <br />
             <asp:Label ID="Label1" runat="server"></asp:Label>
             <br />
             <br />
-            <asp:Button ID="InicioSesionBtn" runat="server" Height="44px" Text="INICIAR SESIÓN" Width="280px" />
+            <asp:Button ID="InicioSesionBtn" runat="server" Height="44px" Text="INICIAR SESIÓN" Width="280px" ValidationGroup="login" />
             <br />
             <br />
             <asp:Label ID="MensajeRegistroLabel" runat="server" Text="¿No tiene usuario?"></asp:Label>
