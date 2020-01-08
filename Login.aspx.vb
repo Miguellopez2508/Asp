@@ -38,7 +38,7 @@ Public Class WebForm2
 
         Try
             If contrasenabase.Equals(hash) Then
-                Response.Redirect("WebForm3.aspx")
+                Response.Redirect("FiltroBusqueda.aspx")
             Else
                 MsgBox("Contraseña incorrecta")
                 Me.UsuarioTB.Text = ""
@@ -70,4 +70,7 @@ Public Class WebForm2
 
     End Function
 
+    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
+
+    End Sub
 End Class

@@ -114,6 +114,8 @@
     <Content Include="Registro.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="WebForm3.aspx" />
+    <Content Include="FiltroBusqueda.aspx" />
+    <Content Include="VerDetalles.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -154,6 +156,20 @@
     </Compile>
     <Compile Include="WebForm3.aspx.vb">
       <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FiltroBusqueda.aspx.designer.vb">
+      <DependentUpon>FiltroBusqueda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FiltroBusqueda.aspx.vb">
+      <DependentUpon>FiltroBusqueda.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VerDetalles.aspx.designer.vb">
+      <DependentUpon>VerDetalles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerDetalles.aspx.vb">
+      <DependentUpon>VerDetalles.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
