@@ -460,5 +460,266 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:ControlDeUsuarios.WebForm4._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm4._Label1">
+<summary>
+Control Label1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm4._Label2">
+<summary>
+Control Label2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm4._NombreTB">
+<summary>
+Control NombreTB.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm4._Label3">
+<summary>
+Control Label3.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm4._alojamientoDDL">
+<summary>
+Control alojamientoDDL.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm4._Label4">
+<summary>
+Control Label4.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm4._provinciaDDL">
+<summary>
+Control provinciaDDL.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm4._Label5">
+<summary>
+Control Label5.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm4._MunicipioTB">
+<summary>
+Control MunicipioTB.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm4._ReservasBtn">
+<summary>
+Control ReservasBtn.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm4._BuscarBtn">
+<summary>
+Control BuscarBtn.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm4._ResultadoTabla">
+<summary>
+Control ResultadoTabla.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm4._PlaceHolder1">
+<summary>
+Control PlaceHolder1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm4._GridView1">
+<summary>
+Control GridView1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm5._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm5._TipoLabel">
+<summary>
+Control TipoLabel.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm5._NombreLabel">
+<summary>
+Control NombreLabel.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm5._DescripcionLabel">
+<summary>
+Control DescripcionLabel.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm5._TelefonoLabel">
+<summary>
+Control TelefonoLabel.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm5._TerritorioLabel">
+<summary>
+Control TerritorioLabel.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm5._EMailLabel">
+<summary>
+Control EMailLabel.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm5._MunicipioLabel">
+<summary>
+Control MunicipioLabel.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm5._WebLabel">
+<summary>
+Control WebLabel.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm5._DireccionLabel">
+<summary>
+Control DireccionLabel.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm5._CapacidadLabel">
+<summary>
+Control CapacidadLabel.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm5._CodigoPostalLabel">
+<summary>
+Control CodigoPostalLabel.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm5._ReservaBtn">
+<summary>
+Control ReservaBtn.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm5._VolverBtn">
+<summary>
+Control VolverBtn.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 </members>
 </doc>
