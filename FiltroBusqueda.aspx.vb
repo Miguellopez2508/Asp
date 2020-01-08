@@ -18,10 +18,23 @@ Public Class WebForm4
         End Try
     End Function
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        Dim connection As MySqlConnection
+        connection = conectar()
+        Dim consulta As String
+        consulta = "SELECT * FROM alojamientos"
+        Dim comando As New MySqlCommand(consulta)
+        comando.Connection = connection
+        Dim resultado As MySqlDataReader
+        resultado = comando.ExecuteReader
+        While resultado.Read()
+            Me.ResultadoTabla.Text += "" & resultado(1) & ", " & resultado(4) & ", " & resultado(12) & " , " & resultado(12) & "<button id=" & resultado(0) & " OnClick=prueba>RESERVAR</button><br>"
+        End While
 
+        connection.Close()
     End Sub
 
     Protected Sub BuscarBtn_Click(sender As Object, e As EventArgs) Handles BuscarBtn.Click
+        Me.ResultadoTabla.Text = ""
         Dim connection As MySqlConnection
         connection = conectar()
         Dim consulta As String
@@ -53,31 +66,33 @@ Public Class WebForm4
         End If
 
         If anadimos = "" Then
-            consulta = "SELECT * FROM alojamientos"
+            Me.ResultadoTabla.Text = "Messi alto pechofrio la concha de su madre"
+        Else
+            consulta += anadimos
+            Dim comando As New MySqlCommand(consulta)
+            comando.Connection = connection
+            Dim resultado As MySqlDataReader
+            resultado = comando.ExecuteReader
+
+            While resultado.Read()
+
+                Me.ResultadoTabla.Text += "" & resultado(1) & ", " & resultado(4) & ", " & resultado(12) & " , " & resultado(12) & "<button id=" & resultado(0) & " OnClick=prueba>RESERVAR</button><br>"
+
+
+                Dim btn As New Button
+                btn.ID = resultado(0)
+                btn.Text = "Ver Detalles"
+                AddHandler btn.Click, AddressOf verdetalles
+
+                'dt.Rows.Add(resultado(1), resultado(7), resultado(12), resultado(13), btn)
+
+
+            End While
         End If
 
-        consulta += anadimos
-        Dim comando As New MySqlCommand(consulta)
-        comando.Connection = connection
-        Dim resultado As MySqlDataReader
-        resultado = comando.ExecuteReader
 
 
 
-        While resultado.Read()
-
-            'Me.resultadolabel.Text += "" & resultado(1) & ", " & resultado(4) & ", " & resultado(12) & " , " & resultado(12) & ""
-
-
-            Dim btn As New Button
-            btn.ID = resultado(0)
-            btn.Text = "Ver Detalles"
-            AddHandler btn.Click, AddressOf verdetalles
-
-            'dt.Rows.Add(resultado(1), resultado(7), resultado(12), resultado(13), btn)
-
-
-        End While
 
         connection.Close()
     End Sub
@@ -86,5 +101,7 @@ Public Class WebForm4
         MsgBox("HoLa")
     End Sub
 
-    '*<button id=" & resultado(0) & " OnClick=prueba>RESERVAR</button><br>" */
+    Protected Sub ReservasBtn_Click(sender As Object, e As EventArgs) Handles ReservasBtn.Click
+        Response.Redirect("VerDetalles.aspx")
+    End Sub
 End Class

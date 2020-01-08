@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-</head>
+    </head>
 <body>
     <form id="form1" runat="server">
         <br />
@@ -48,12 +48,47 @@
             <asp:Label ID="CodigoPostalLabel" runat="server" Text="CÓDIGO_POSTAL"></asp:Label>
             <br />
             <br />
+        <br />
+        <br />
             <br />
-            <asp:Button ID="ReservaBtn" runat="server" Height="37px" Text="RESERVAR" Width="217px" />
+            <br />
+            <asp:Button ID="HacerReservaBtn" runat="server" Height="37px" Text="HACER RESERVA" Width="217px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="VolverBtn" runat="server" Height="33px" Text="VOLVER" Width="98px" />
+            <asp:Button ID="VolverBtn" runat="server" Height="38px" Text="VOLVER" Width="98px" />
+                <br />
+        <asp:Panel ID="Panel1" runat="server" Visible="False">
+            <asp:Label ID="Label1" runat="server" Text="Fecha Inicio: "></asp:Label>
+            <asp:Label ID="FechaInicioLabel" runat="server"></asp:Label>
             <br />
+            <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="#3366CC" BorderWidth="1px" CellPadding="1" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="#003399" Height="200px" Width="220px">
+                <DayHeaderStyle BackColor="#99CCCC" ForeColor="#336666" Height="1px" />
+                <NextPrevStyle Font-Size="8pt" ForeColor="#CCCCFF" />
+                <OtherMonthDayStyle ForeColor="#999999" />
+                <SelectedDayStyle BackColor="#009999" Font-Bold="True" ForeColor="#CCFF99" />
+                <SelectorStyle BackColor="#99CCCC" ForeColor="#336666" />
+                <TitleStyle BackColor="#003399" BorderColor="#3366CC" BorderWidth="1px" Font-Bold="True" Font-Size="10pt" ForeColor="#CCCCFF" Height="25px" />
+                <TodayDayStyle BackColor="#99CCCC" ForeColor="White" />
+                <WeekendDayStyle BackColor="#CCCCFF" />
+            </asp:Calendar>
             <br />
+            <asp:Label ID="Label2" runat="server" Text="Fecha Fin: "></asp:Label>
+            <asp:Label ID="FechaFinLabel" runat="server"></asp:Label>
+            <br />
+            <asp:Calendar ID="Calendar2" runat="server" BackColor="White" BorderColor="#3366CC" BorderWidth="1px" CellPadding="1" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="#003399" Height="200px" Width="220px">
+                <DayHeaderStyle BackColor="#99CCCC" ForeColor="#336666" Height="1px" />
+                <NextPrevStyle Font-Size="8pt" ForeColor="#CCCCFF" />
+                <OtherMonthDayStyle ForeColor="#999999" />
+                <SelectedDayStyle BackColor="#009999" Font-Bold="True" ForeColor="#CCFF99" />
+                <SelectorStyle BackColor="#99CCCC" ForeColor="#336666" />
+                <TitleStyle BackColor="#003399" BorderColor="#3366CC" BorderWidth="1px" Font-Bold="True" Font-Size="10pt" ForeColor="#CCCCFF" Height="25px" />
+                <TodayDayStyle BackColor="#99CCCC" ForeColor="White" />
+                <WeekendDayStyle BackColor="#CCCCFF" />
+            </asp:Calendar>
+            <br />
+            <asp:Button ID="ReservarBtn" runat="server" Font-Bold="True" Font-Size="XX-Large" Font-Underline="True" Height="52px" Text="RESERVAR" Width="240px" />
+        </asp:Panel>
+        <br />
+                &nbsp;<br />
     </form>
 </body>
 </html>

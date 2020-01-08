@@ -122,6 +122,15 @@ Partial Public Class WebForm4
     Protected WithEvents BuscarBtn As Global.System.Web.UI.WebControls.Button
     
     '''<summary>
+    '''Control ResultadoTabla0.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ResultadoTabla0 As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''Control ResultadoTabla.
     '''</summary>
     '''<remarks>

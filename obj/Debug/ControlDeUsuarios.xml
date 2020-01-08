@@ -568,6 +568,15 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:ControlDeUsuarios.WebForm4._ResultadoTabla0">
+<summary>
+Control ResultadoTabla0.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:ControlDeUsuarios.WebForm4._ResultadoTabla">
 <summary>
 Control ResultadoTabla.
@@ -703,9 +712,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ControlDeUsuarios.WebForm5._ReservaBtn">
+<member name="F:ControlDeUsuarios.WebForm5._HacerReservaBtn">
 <summary>
-Control ReservaBtn.
+Control HacerReservaBtn.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -715,6 +724,78 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ControlDeUsuarios.WebForm5._VolverBtn">
 <summary>
 Control VolverBtn.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm5._Panel1">
+<summary>
+Control Panel1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm5._Label1">
+<summary>
+Control Label1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm5._FechaInicioLabel">
+<summary>
+Control FechaInicioLabel.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm5._Calendar1">
+<summary>
+Control Calendar1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm5._Label2">
+<summary>
+Control Label2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm5._FechaFinLabel">
+<summary>
+Control FechaFinLabel.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm5._Calendar2">
+<summary>
+Control Calendar2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm5._ReservarBtn">
+<summary>
+Control ReservarBtn.
 </summary>
 <remarks>
 Campo generado automáticamente.

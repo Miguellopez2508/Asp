@@ -25,7 +25,7 @@ Public Class WebForm2
         Dim connection As MySqlConnection
         connection = conectar()
         Dim consulta As String
-        consulta = "select password from usuario where email = '" & UsuarioTB.Text & "'"
+        consulta = "select password, dni from usuario where email = '" & UsuarioTB.Text & "'"
         Dim comando As New MySqlCommand(consulta)
         comando.Connection = connection
         Dim resultado As MySqlDataReader
@@ -38,6 +38,7 @@ Public Class WebForm2
 
         Try
             If contrasenabase.Equals(hash) Then
+                Session("DNI") = resultado(1)
                 Response.Redirect("FiltroBusqueda.aspx")
             Else
                 Label1.Text = "Datos incorrectos"

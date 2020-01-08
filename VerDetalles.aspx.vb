@@ -27,9 +27,6 @@ Public Class WebForm5
         'HACER TABLA HTML PARA QUE NO DE CANCER
         connection.Close()
     End Sub
-    Protected Sub ReservaBtn_Click(sender As Object, e As EventArgs) Handles ReservaBtn.Click
-
-    End Sub
 
     Public Function conectar() As MySqlConnection
         Try
@@ -52,7 +49,39 @@ Public Class WebForm5
         Response.Redirect("FiltroBusqueda.aspx")
     End Sub
 
+    Protected Sub Calendar1_SelectionChanged(sender As Object, e As EventArgs) Handles Calendar1.SelectionChanged
+        Me.FechaInicioLabel.Text = Me.Calendar1.SelectedDate.ToShortDateString
+    End Sub
+
+    Protected Sub Calendar2_SelectionChanged(sender As Object, e As EventArgs) Handles Calendar2.SelectionChanged
+        Me.FechaFinLabel.Text = Me.Calendar2.SelectedDate.ToShortDateString
+    End Sub
+
+    Protected Sub ReservarBtn_Click(sender As Object, e As EventArgs) Handles ReservarBtn.Click
+
+        If Me.FechaFinLabel.Text = "" Or Me.FechaInicioLabel.Text = "" Then
+            MsgBox("INTRODUZCAS FECHAS PARA HACER LA RESERVA")
+        Else
+            If Me.Calendar1.SelectedDate < Me.Calendar2.SelectedDate Then
+                Dim connection As MySqlConnection
+                connection = conectar()
+                Dim consulta As String
+                consulta = "insert into reservas (DNI, FECHA_INICIO, FECHA_FIN, ID_ALOJAMIENTO) values (" & Session("DNI") & ",'" & Me.Calendar1.SelectedDate.ToString("yyyy/MM/dd") & "','" & Me.Calendar2.SelectedDate.ToString("yyyy/MM/dd") & "','" & identi & "')"
+                Dim comando As New MySqlCommand(consulta)
+                comando.Connection = connection
+                Dim resultado As MySqlDataReader
+                resultado = comando.ExecuteReader
+                connection.Close()
+            Else
+                MsgBox("ORDEN DE FECHAS INCORRECTA")
+            End If
+
+        End If
 
 
+    End Sub
 
+    Protected Sub HacerReservaBtn_Click(sender As Object, e As EventArgs) Handles HacerReservaBtn.Click
+        Me.Panel1.Visible = True
+    End Sub
 End Class

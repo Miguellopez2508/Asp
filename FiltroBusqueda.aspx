@@ -40,6 +40,7 @@
             <br />
             <asp:Button ID="BuscarBtn" runat="server" Text="Buscar" />
             <br />
+            <asp:Label ID="ResultadoTabla0" runat="server"></asp:Label>
             <br />
             <asp:Label ID="ResultadoTabla" runat="server"></asp:Label>
             <asp:PlaceHolder ID="PlaceHolder1" runat="server"></asp:PlaceHolder>
