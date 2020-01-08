@@ -40,12 +40,12 @@ Public Class WebForm2
             If contrasenabase.Equals(hash) Then
                 Response.Redirect("WebForm3.aspx")
             Else
-                MsgBox("Contraseña incorrecta")
+                Label1.Text = "Datos incorrectos"
                 Me.UsuarioTB.Text = ""
                 Me.ContrasenaTB.Text = ""
             End If
         Catch
-            Label1.Text = "Usuario no existe"
+            Label1.Text = "Datos incorrectos"
         End Try
     End Sub
 

@@ -40,7 +40,7 @@ Public Class WebForm1
             Dim cn As New MySqlConnection()
             cn.ConnectionString = Session("Conectar")
             Dim Ds As New DataSet
-            Dim Da As New MySqlDataAdapter("insert into usuario (DNI, NOMBRE, APELLIDOS, EMAIL, TELEFONO, PASSWORD, TIPO) values ('" & dni & "','" & nombre & "','" & apellidos & "','" & email & "'," & telefono & "," & "md5(" & password & ")" & "," & tipo & ")", cn)
+            Dim Da As New MySqlDataAdapter("insert into usuario (DNI, NOMBRE, APELLIDOS, EMAIL, TELEFONO, PASSWORD, TIPO) values ('" & dni & "','" & nombre & "','" & apellidos & "','" & email & "'," & telefono & "," & "md5('" & password & "')" & "," & tipo & ")", cn)
             Da.Fill(Ds, "usuario")
             cn.Close()
             MsgBox("El registro se ha añadido correctamente")
