@@ -595,15 +595,6 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ControlDeUsuarios.WebForm4._GridView1">
-<summary>
-Control GridView1.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:ControlDeUsuarios.WebForm5._form1">
 <summary>
 Control form1.
@@ -796,6 +787,33 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ControlDeUsuarios.WebForm5._ReservarBtn">
 <summary>
 Control ReservarBtn.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm6._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm6._Label1">
+<summary>
+Control Label1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm6._ResultadoLabel">
+<summary>
+Control ResultadoLabel.
 </summary>
 <remarks>
 Campo generado automáticamente.

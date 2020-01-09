@@ -45,8 +45,6 @@
             <asp:Label ID="ResultadoTabla" runat="server"></asp:Label>
             <asp:PlaceHolder ID="PlaceHolder1" runat="server"></asp:PlaceHolder>
             <br />
-            <asp:GridView ID="GridView1" runat="server">
-            </asp:GridView>
             <br />
         </div>
     </form>

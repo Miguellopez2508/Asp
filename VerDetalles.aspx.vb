@@ -1,7 +1,8 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class WebForm5
     Inherits System.Web.UI.Page
-    Dim identi As String = "BBI00001"
+    Dim identi As String = "BBI00008"
+    Dim dni As String = "12345678H"
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Dim connection As MySqlConnection
         connection = conectar()
@@ -62,11 +63,11 @@ Public Class WebForm5
         If Me.FechaFinLabel.Text = "" Or Me.FechaInicioLabel.Text = "" Then
             MsgBox("INTRODUZCAS FECHAS PARA HACER LA RESERVA")
         Else
-            If Me.Calendar1.SelectedDate < Me.Calendar2.SelectedDate Then
+            If Me.Calendar1.SelectedDate < Me.Calendar2.SelectedDate Or Me.Calendar1.SelectedDate = Me.Calendar2.SelectedDate Then
                 Dim connection As MySqlConnection
                 connection = conectar()
                 Dim consulta As String
-                consulta = "insert into reservas (DNI, FECHA_INICIO, FECHA_FIN, ID_ALOJAMIENTO) values (" & Session("DNI") & ",'" & Me.Calendar1.SelectedDate.ToString("yyyy/MM/dd") & "','" & Me.Calendar2.SelectedDate.ToString("yyyy/MM/dd") & "','" & identi & "')"
+                consulta = "insert into reservas (DNI, FECHA_INICIO, FECHA_FIN, ID_ALOJAMIENTO) values ('" & dni & "','" & Me.Calendar1.SelectedDate.ToString("yyyy/MM/dd") & "','" & Me.Calendar2.SelectedDate.ToString("yyyy/MM/dd") & "','" & identi & "')"
                 Dim comando As New MySqlCommand(consulta)
                 comando.Connection = connection
                 Dim resultado As MySqlDataReader

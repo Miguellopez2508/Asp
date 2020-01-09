@@ -1,4 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports System.Data
+Imports System.Text
+
 Public Class WebForm4
     Inherits System.Web.UI.Page
     Public Function conectar() As MySqlConnection
@@ -18,19 +21,19 @@ Public Class WebForm4
         End Try
     End Function
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        Dim connection As MySqlConnection
-        connection = conectar()
-        Dim consulta As String
-        consulta = "SELECT * FROM alojamientos"
-        Dim comando As New MySqlCommand(consulta)
-        comando.Connection = connection
-        Dim resultado As MySqlDataReader
-        resultado = comando.ExecuteReader
-        While resultado.Read()
-            Me.ResultadoTabla.Text += "" & resultado(1) & ", " & resultado(4) & ", " & resultado(12) & " , " & resultado(12) & "<button id=" & resultado(0) & " OnClick=prueba>RESERVAR</button><br>"
-        End While
+        'Dim connection As MySqlConnection
+        'connection = conectar()
+        'Dim consulta As String
+        'consulta = "SELECT * FROM alojamientos"
+        'Dim comando As New MySqlCommand(consulta)
+        'comando.Connection = connection
+        'Dim resultado As MySqlDataReader
+        'resultado = comando.ExecuteReader
+        'While resultado.Read()
+        ' Me.ResultadoTabla.Text += "" & resultado(1) & ", " & resultado(4) & ", " & resultado(12) & " , " & resultado(12) & "<button id=" & resultado(0) & " OnClick=prueba>RESERVAR</button><br>"
+        ' End While
 
-        connection.Close()
+        'connection.Close()
     End Sub
 
     Protected Sub BuscarBtn_Click(sender As Object, e As EventArgs) Handles BuscarBtn.Click
@@ -74,22 +77,46 @@ Public Class WebForm4
             Dim resultado As MySqlDataReader
             resultado = comando.ExecuteReader
 
+            Dim dt As DataTable = New DataTable
+            dt.Columns.AddRange(New DataColumn() {New DataColumn("Nombre", GetType(System.String)), New DataColumn("Name", GetType(System.String)), New DataColumn("Country", GetType(System.String)), New DataColumn("municipio", GetType(System.String)), New DataColumn("reserva", GetType(System.Web.UI.WebControls.Button))})
+
+
             While resultado.Read()
 
-                Me.ResultadoTabla.Text += "" & resultado(1) & ", " & resultado(4) & ", " & resultado(12) & " , " & resultado(12) & "<button id=" & resultado(0) & " OnClick=prueba>RESERVAR</button><br>"
 
 
-                Dim btn As New Button
+                Dim btn = New Button()
                 btn.ID = resultado(0)
                 btn.Text = "Ver Detalles"
                 AddHandler btn.Click, AddressOf verdetalles
 
-                'dt.Rows.Add(resultado(1), resultado(7), resultado(12), resultado(13), btn)
-
+                'Me.ResultadoTabla.Text += "" & resultado(1) & ", " & resultado(4) & ", " & resultado(12) & " , " & resultado(12) & " " & btn
+                dt.Rows.Add(resultado(1), resultado(4), resultado(12), resultado(13), btn)
 
             End While
-        End If
+            Dim sb As StringBuilder = New StringBuilder()
 
+            sb.Append("<table cellpadding='5' cellspacing='0' style='border: 1px solid #ccc;font-size: 9pt;font-family:Arial'>")
+            'Adding HeaderRow.
+            sb.Append("<tr>")
+            For Each column As DataColumn In dt.Columns
+                sb.Append(("<th style='background-color: #B8DBFD;border: 1px solid #ccc'>" _
+                                + (column.ColumnName + "</th>")))
+            Next
+            sb.Append("</tr>")
+            'Adding DataRow.
+            For Each row As DataRow In dt.Rows
+                sb.Append("<tr>")
+                For Each column As DataColumn In dt.Columns
+                    sb.Append(("<td style='width:100px;border: 1px solid #ccc'>" _
+                                    + (row(column.ColumnName).ToString + "</td>")))
+                Next
+                sb.Append("</tr>")
+            Next
+            'Table end.
+            sb.Append("</table>")
+            Me.ResultadoTabla0.Text = sb.ToString
+        End If
 
 
 
@@ -102,6 +129,6 @@ Public Class WebForm4
     End Sub
 
     Protected Sub ReservasBtn_Click(sender As Object, e As EventArgs) Handles ReservasBtn.Click
-        Response.Redirect("VerDetalles.aspx")
+        Response.Redirect("MisReservas.aspx")
     End Sub
 End Class
