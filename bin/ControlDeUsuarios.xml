@@ -586,9 +586,27 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:ControlDeUsuarios.WebForm4._Label6">
+<summary>
+Control Label6.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:ControlDeUsuarios.WebForm4._PlaceHolder1">
 <summary>
 Control PlaceHolder1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm4._TextBox1">
+<summary>
+Control TextBox1.
 </summary>
 <remarks>
 Campo generado automáticamente.

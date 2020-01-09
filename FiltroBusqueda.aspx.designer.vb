@@ -140,6 +140,15 @@ Partial Public Class WebForm4
     Protected WithEvents ResultadoTabla As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
+    '''Control Label6.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''Control PlaceHolder1.
     '''</summary>
     '''<remarks>
@@ -147,4 +156,13 @@ Partial Public Class WebForm4
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents PlaceHolder1 As Global.System.Web.UI.WebControls.PlaceHolder
+    
+    '''<summary>
+    '''Control TextBox1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TextBox1 As Global.System.Web.UI.WebControls.TextBox
 End Class

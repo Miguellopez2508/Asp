@@ -4,6 +4,11 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <script>
+        function testing(id) {
+            document.getElementById("TextBox1").value = id;
+        }
+    </script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
 </head>
@@ -43,8 +48,10 @@
             <asp:Label ID="ResultadoTabla0" runat="server"></asp:Label>
             <br />
             <asp:Label ID="ResultadoTabla" runat="server"></asp:Label>
+            <asp:Label ID="Label6" runat="server"></asp:Label>
+
             <asp:PlaceHolder ID="PlaceHolder1" runat="server"></asp:PlaceHolder>
-            <br />
+            <asp:TextBox ID="TextBox1" runat="server" AutoPostBack="True"></asp:TextBox>
             <br />
         </div>
     </form>

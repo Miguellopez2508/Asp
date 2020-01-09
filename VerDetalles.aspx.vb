@@ -1,13 +1,13 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class WebForm5
     Inherits System.Web.UI.Page
-    Dim identi As String = "BBI00008"
+
     Dim dni As String = "12345678H"
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Dim connection As MySqlConnection
         connection = conectar()
         Dim consulta As String
-        consulta = "SELECT * FROM alojamientos WHERE ID='" & identi & "' "
+        consulta = "SELECT * FROM alojamientos WHERE ID='" & Session("ID") & "' "
         Dim comando As New MySqlCommand(consulta)
         comando.Connection = connection
         Dim resultado As MySqlDataReader
@@ -67,7 +67,7 @@ Public Class WebForm5
                 Dim connection As MySqlConnection
                 connection = conectar()
                 Dim consulta As String
-                consulta = "insert into reservas (DNI, FECHA_INICIO, FECHA_FIN, ID_ALOJAMIENTO) values ('" & dni & "','" & Me.Calendar1.SelectedDate.ToString("yyyy/MM/dd") & "','" & Me.Calendar2.SelectedDate.ToString("yyyy/MM/dd") & "','" & identi & "')"
+                consulta = "insert into reservas (DNI, FECHA_INICIO, FECHA_FIN, ID_ALOJAMIENTO) values ('" & Session("DNI") & "','" & Me.Calendar1.SelectedDate.ToString("yyyy/MM/dd") & "','" & Me.Calendar2.SelectedDate.ToString("yyyy/MM/dd") & "','" & Session("ID") & "')"
                 Dim comando As New MySqlCommand(consulta)
                 comando.Connection = connection
                 Dim resultado As MySqlDataReader
