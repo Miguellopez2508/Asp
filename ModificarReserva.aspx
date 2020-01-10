@@ -59,7 +59,7 @@
             <br />
             <br />
             <asp:Button ID="HacerReservaBtn" runat="server" Height="37px" Text="MODIFICAR" Width="217px" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="EliminarBtn" runat="server" Height="37px" Text="ELIMINAR" Width="217px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="EliminarBtn" runat="server" Height="37px" Text="ELIMINAR" Width="217px" BackColor="Red" ForeColor="White" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
             <asp:Button ID="VolverBtn" runat="server" Height="38px" Text="VOLVER" Width="98px" />
                 <br />
@@ -81,6 +81,7 @@
             <asp:Label ID="Label2" runat="server" Text="Fecha Fin: "></asp:Label>
             <asp:Label ID="FechaFinLabel" runat="server"></asp:Label>
             <br />
+            <br />
             <asp:Calendar ID="Calendar2" runat="server" BackColor="White" BorderColor="#3366CC" BorderWidth="1px" CellPadding="1" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="#003399" Height="200px" Width="220px">
                 <DayHeaderStyle BackColor="#99CCCC" ForeColor="#336666" Height="1px" />
                 <NextPrevStyle Font-Size="8pt" ForeColor="#CCCCFF" />
@@ -92,8 +93,7 @@
                 <WeekendDayStyle BackColor="#CCCCFF" />
             </asp:Calendar>
             <br />
-            <asp:Button ID="modificarBtn" runat="server" Height="38px" Text="Modificar" Width="188px" />
-            <br />
+            <asp:Button ID="confirmarBtn" runat="server" Height="57px" Text="CONFIRMAR" Width="220px" />
             <br />
         </asp:Panel>
         <br />

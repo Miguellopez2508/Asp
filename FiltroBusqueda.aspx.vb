@@ -101,4 +101,9 @@ Public Class WebForm4
         Session("ID") = Me.HiddenField1.Value
         Response.Redirect("VerDetalles.aspx")
     End Sub
+
+    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Response.Redirect("Login.aspx")
+        Session.Contents.RemoveAll()
+    End Sub
 End Class

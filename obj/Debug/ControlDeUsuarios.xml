@@ -550,6 +550,15 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:ControlDeUsuarios.WebForm4._Button1">
+<summary>
+Control Button1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:ControlDeUsuarios.WebForm4._ReservasBtn">
 <summary>
 Control ReservasBtn.
@@ -811,18 +820,18 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ControlDeUsuarios.WebForm6._Label1">
+<member name="F:ControlDeUsuarios.WebForm6._VolverBtn">
 <summary>
-Control Label1.
+Control VolverBtn.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ControlDeUsuarios.WebForm6._VolverBtn">
+<member name="F:ControlDeUsuarios.WebForm6._Label1">
 <summary>
-Control VolverBtn.
+Control Label1.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -1063,9 +1072,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ControlDeUsuarios.WebForm7._modificarBtn">
+<member name="F:ControlDeUsuarios.WebForm7._confirmarBtn">
 <summary>
-Control modificarBtn.
+Control confirmarBtn.
 </summary>
 <remarks>
 Campo generado automáticamente.

@@ -25,8 +25,10 @@ Public Class WebForm7
             Me.DireccionLabel.Text = resultado(4)
             Me.CodigoPostalLabel.Text = resultado(9)
         End While
-        'HACER TABLA HTML PARA QUE NO DE CANCER
         connection.Close()
+
+
+
     End Sub
     Public Function conectar() As MySqlConnection
         Try
@@ -75,19 +77,48 @@ Public Class WebForm7
     End Sub
 
     Protected Sub HacerReservaBtn_Click(sender As Object, e As EventArgs) Handles HacerReservaBtn.Click
+        Dim connection2 As MySqlConnection
+        connection2 = conectar()
+        Dim consulta2 As String
+        consulta2 = "SELECT * FROM reservas WHERE ID='" & Session("ID_reserva") & "' "
+        Dim comando2 As New MySqlCommand(consulta2)
+        comando2.Connection = connection2
+        Dim resultado2 As MySqlDataReader
+        resultado2 = comando2.ExecuteReader
+        While resultado2.Read()
+            Me.FechaInicioLabel.Text = resultado2(2)
+            Me.FechaFinLabel.Text = resultado2(3)
+            Me.Calendar1.VisibleDate = resultado2(2)
+            Me.Calendar2.VisibleDate = resultado2(3)
+            Me.Calendar1.SelectedDate = resultado2(2)
+            Me.Calendar2.SelectedDate = resultado2(3)
+        End While
+        connection2.Close()
         Me.Panel1.Visible = True
     End Sub
 
-    Protected Sub modificarBtn_Click(sender As Object, e As EventArgs) Handles modificarBtn.Click
+
+    Protected Sub Calendar1_SelectionChanged(sender As Object, e As EventArgs) Handles Calendar1.SelectionChanged
+        Me.FechaInicioLabel.Text = Calendar1.SelectedDate.ToShortDateString
+    End Sub
+
+    Protected Sub Calendar2_SelectionChanged(sender As Object, e As EventArgs) Handles Calendar2.SelectionChanged
+        Me.FechaFinLabel.Text = Calendar2.SelectedDate.ToShortDateString
+    End Sub
+
+    Protected Sub VolverBtn_Click(sender As Object, e As EventArgs) Handles VolverBtn.Click
+        Response.Redirect("MisReservas.aspx")
+    End Sub
+
+    Protected Sub confirmarBtn_Click(sender As Object, e As EventArgs) Handles confirmarBtn.Click
         If Me.FechaFinLabel.Text = "" Or Me.FechaInicioLabel.Text = "" Then
-            MsgBox("INTRODUZCAS FECHAS PARA HACER LA RESERVA")
+            MsgBox("INTRODUZCA FECHAS PARA HACER LA RESERVA")
         Else
             If Me.Calendar1.SelectedDate < Me.Calendar2.SelectedDate Or Me.Calendar1.SelectedDate = Me.Calendar2.SelectedDate Then
                 Dim connection As MySqlConnection
                 connection = conectar()
                 Dim consulta As String
-                'consulta = "insert into reservas (DNI, FECHA_INICIO, FECHA_FIN, ID_ALOJAMIENTO) values ('" & Session("DNI") & "','" & Me.Calendar1.SelectedDate.ToString("yyyy/MM/dd") & "','" & Me.Calendar2.SelectedDate.ToString("yyyy/MM/dd") & "','" & Session("ID") & "')"
-                consulta = "UPDATE reservas SET FECHA_INICIO='" & Me.Calendar1.SelectedDate.ToString("yyyy/MM/dd") & "', FECHA_FIN='" & Me.Calendar2.SelectedDate.ToString("yyyy/MM/dd") & "' WHERE id='" & Session("ID_reserva") & "'"
+                consulta = "UPDATE reservas Set FECHA_INICIO='" & Me.Calendar1.SelectedDate.ToString("yyyy/MM/dd") & "', FECHA_FIN='" & Me.Calendar2.SelectedDate.ToString("yyyy/MM/dd") & "' WHERE id='" & Session("ID_reserva") & "'"
                 Dim comando As New MySqlCommand(consulta)
                 comando.Connection = connection
                 Dim resultado As MySqlDataReader

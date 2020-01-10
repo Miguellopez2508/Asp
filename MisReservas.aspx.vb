@@ -11,10 +11,12 @@ Public Class WebForm6
         comando.Connection = connection
         Dim resultado As MySqlDataReader
         resultado = comando.ExecuteReader
-
+        Me.ResultadoLabel.Text += " <div class=" & "tbl-header" & "><table><thead><tr><th>Nombre</th><th>Fecha Inicio</th><th>Fecha Fin</th><th>Accion</th></tr></thead></div></table> <div class= " & "tbl-content" & "><table cellpadding=" & "0 " & " cellspacing=" & "0 " & " border=" & "0 " & "><tbody>"
         While resultado.Read()
-            Me.ResultadoLabel.Text += resultado(6) & ", desde " & resultado(2) & " hasta " & resultado(3) & " <button OnClick=" & "modificar('" & resultado(4) & "','" & resultado(0) & "') >Ver detalles</button><br>"
+            ' Me.ResultadoLabel.Text += resultado(6) & ", desde " & resultado(2) & " hasta " & resultado(3) & " <button OnClick=" & "modificar('" & resultado(4) & "','" & resultado(0) & "') >Ver detalles</button><br>"
+            Me.ResultadoLabel.Text += "<tr><td>" & resultado(6) & "</td><td>" & resultado(2) & "</td><td> " & resultado(3) & "</td> <td><button OnClick=" & "modificar('" & resultado(4) & "','" & resultado(0) & "') >Ver detalles</button></td></tr>"
         End While
+        Me.ResultadoLabel.Text += "</tbody></table>"
         If resultado Is Nothing Then
             Me.ResultadoLabel.Text = "SIN RESERVAS"
         End If

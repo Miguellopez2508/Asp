@@ -18,7 +18,7 @@
         <div class="auto-style1">
             <br />
             <br />
-            <asp:Label ID="MensajeBienvenidaLabel" runat="server" Font-Size="XX-Large" Text="BIENVENIDO"></asp:Label>
+            <asp:Label ID="MensajeBienvenidaLabel" runat="server" Font-Size="XX-Large" Text=" BIENVENIDO"></asp:Label>
             <br />
             <br />
             <asp:Label ID="UsuarioLabel" runat="server" Text="E-Mail"></asp:Label>

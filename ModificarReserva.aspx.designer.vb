@@ -212,11 +212,11 @@ Partial Public Class WebForm7
     Protected WithEvents Calendar2 As Global.System.Web.UI.WebControls.Calendar
     
     '''<summary>
-    '''Control modificarBtn.
+    '''Control confirmarBtn.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents modificarBtn As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents confirmarBtn As Global.System.Web.UI.WebControls.Button
 End Class
