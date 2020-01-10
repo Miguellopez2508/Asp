@@ -6,7 +6,7 @@
 <head runat="server">
     <script>
         function testing(id) {
-            document.getElementById("TextBox1").value = id;
+            document.getElementById("HiddenField1").value = id;
         }
     </script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -30,7 +30,7 @@
             </asp:DropDownList>
             &nbsp;&nbsp;&nbsp;
             <asp:Label ID="Label4" runat="server" Text="Provincia: "></asp:Label>
-            <asp:DropDownList ID="provinciaDDL" runat="server" AutoPostBack="True">
+            <asp:DropDownList ID="provinciaDDL" runat="server">
                 <asp:ListItem></asp:ListItem>
                 <asp:ListItem>Bizkaia</asp:ListItem>
                 <asp:ListItem>Gipuzkoa</asp:ListItem>
@@ -50,8 +50,8 @@
             <asp:Label ID="ResultadoTabla" runat="server"></asp:Label>
             <asp:Label ID="Label6" runat="server"></asp:Label>
 
-            <asp:PlaceHolder ID="PlaceHolder1" runat="server"></asp:PlaceHolder>
-            <asp:TextBox ID="TextBox1" runat="server" AutoPostBack="True"></asp:TextBox>
+            <br />
+            <asp:HiddenField ID="HiddenField1" runat="server" />
             <br />
         </div>
     </form>

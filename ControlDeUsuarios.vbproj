@@ -117,6 +117,7 @@
     <Content Include="FiltroBusqueda.aspx" />
     <Content Include="VerDetalles.aspx" />
     <Content Include="MisReservas.aspx" />
+    <Content Include="ModificarReserva.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -178,6 +179,13 @@
     </Compile>
     <Compile Include="MisReservas.aspx.vb">
       <DependentUpon>MisReservas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ModificarReserva.aspx.designer.vb">
+      <DependentUpon>ModificarReserva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarReserva.aspx.vb">
+      <DependentUpon>ModificarReserva.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
