@@ -124,6 +124,7 @@ Public Class WebForm7
                 Dim resultado As MySqlDataReader
                 resultado = comando.ExecuteReader
                 connection.Close()
+                Response.Redirect("MisReservas.aspx")
             Else
                 MsgBox("ORDEN DE FECHAS INCORRECTA")
             End If

@@ -29,12 +29,12 @@ Public Class WebForm4
         comando.Connection = connection
         Dim resultado As MySqlDataReader
         resultado = comando.ExecuteReader
-        Me.ResultadoTabla.Text = "<table><tr><th>NOMBRE</th><th>TIPO</th><th>TERRITORIO</th><th>MUNICIPIO</th><tr>"
+        Me.ResultadoTabla.Text += " <div class=" & "tbl-header" & "><table><thead><tr><th>NOMBRE</th><th>TIPO</th><th>TERRITORIO</th><th>MUNICIPIO</th><th>DETALLES</th></tr></thead></div></table> <div class= " & "tbl-content" & "><table cellpadding=" & "0 " & " cellspacing=" & "0 " & " border=" & "0 " & "><tbody>"
         While resultado.Read()
             'Me.ResultadoTabla.Text += "" & resultado(1) & ", " & resultado(4) & ", " & resultado(12) & " , " & resultado(12) & " " & btn
             Me.ResultadoTabla.Text += "<tr><td>" & resultado(1) & "</td><td>" & resultado(4) & "</td><td>" & resultado(12) & "</td><td>" & resultado(13) & "</td><td><button OnClick=" & "testing('" & resultado(0) & "') >Ver detalles</button></td></tr>"
         End While
-        Me.ResultadoTabla.Text += "</table>"
+        Me.ResultadoTabla.Text += "</tbody></table>"
         connection.Close()
     End Sub
 
@@ -80,12 +80,12 @@ Public Class WebForm4
             resultado = comando.ExecuteReader
 
             If resultado.HasRows Then
-                Me.ResultadoTabla.Text = "<table><tr><th>NOMBRE</th><th>TIPO</th><th>TERRITORIO</th><th>MUNICIPIO</th><tr>"
+                Me.ResultadoTabla.Text += " <div class=" & "tbl-header" & "><table><thead><tr><th>NOMBRE</th><th>TIPO</th><th>TERRITORIO</th><th>MUNICIPIO</th><th>DETALLES</th></tr></thead></div></table> <div class= " & "tbl-content" & "><table cellpadding=" & "0 " & " cellspacing=" & "0 " & " border=" & "0 " & "><tbody>"
                 While resultado.Read()
                     'Me.ResultadoTabla.Text += "" & resultado(1) & ", " & resultado(4) & ", " & resultado(12) & " , " & resultado(12) & " " & btn
                     Me.ResultadoTabla.Text += "<tr><td>" & resultado(1) & "</td><td>" & resultado(4) & "</td><td>" & resultado(12) & "</td><td>" & resultado(13) & "</td><td><button OnClick=" & "testing('" & resultado(0) & "') >Ver detalles</button></td></tr>"
                 End While
-                Me.ResultadoTabla.Text += "</table>"
+                Me.ResultadoTabla.Text += "</tbody></table>"
             Else
                 Me.ResultadoTabla.Text = "NINGUN RESULTADO OBTENIDO"
             End If

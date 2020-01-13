@@ -122,13 +122,13 @@ Partial Public Class WebForm5
     Protected WithEvents CodigoPostalLabel As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control HacerReservaBtn.
+    '''Control CheckBox1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents HacerReservaBtn As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents CheckBox1 As Global.System.Web.UI.WebControls.CheckBox
     
     '''<summary>
     '''Control VolverBtn.

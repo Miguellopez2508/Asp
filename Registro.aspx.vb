@@ -1,6 +1,4 @@
-﻿
-Imports MySql.Data.MySqlClient
-
+﻿Imports MySql.Data.MySqlClient
 Public Class WebForm1
     Inherits System.Web.UI.Page
 
@@ -10,8 +8,6 @@ Public Class WebForm1
     Dim email As String
     Dim telefono As Integer
     Dim password As String
-    Dim tipo As Integer
-
 
     Protected Sub Registrar_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
@@ -24,7 +20,6 @@ Public Class WebForm1
         telefono = TextBox5.Text
         password = TextBox6.Text
         confirmarPassword = TextBox7.Text
-        tipo = DropDownList1.SelectedValue
 
         insertarDatos()
 
@@ -40,10 +35,10 @@ Public Class WebForm1
             Dim cn As New MySqlConnection()
             cn.ConnectionString = Session("Conectar")
             Dim Ds As New DataSet
-            Dim Da As New MySqlDataAdapter("insert into usuario (DNI, NOMBRE, APELLIDOS, EMAIL, TELEFONO, PASSWORD, TIPO) values ('" & dni & "','" & nombre & "','" & apellidos & "','" & email & "'," & telefono & "," & "md5('" & password & "')" & "," & tipo & ")", cn)
+            Dim Da As New MySqlDataAdapter("insert into usuario (DNI, NOMBRE, APELLIDOS, EMAIL, TELEFONO, PASSWORD, TIPO) values ('" & dni & "','" & nombre & "','" & apellidos & "','" & email & "'," & telefono & "," & "md5('" & password & "')" & "," & 0 & ")", cn)
             Da.Fill(Ds, "usuario")
             cn.Close()
-            MsgBox("El registro se ha añadido correctamente")
+            Response.Write("<script>window.alert('Se ha logeado correctamente');</script>" + "<script>window.setTimeout(location.href='Login.aspx', 1000);</script>")
             Response.Redirect("Login.aspx")
         Catch err As Exception
 
@@ -54,4 +49,5 @@ Public Class WebForm1
     Protected Sub Cancelar_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Response.Redirect("Login.aspx")
     End Sub
+
 End Class

@@ -298,24 +298,6 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ControlDeUsuarios.WebForm1._Label10">
-<summary>
-Control Label10.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:ControlDeUsuarios.WebForm1._DropDownList1">
-<summary>
-Control DropDownList1.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:ControlDeUsuarios.WebForm1._Button1">
 <summary>
 Control Button1.
@@ -550,9 +532,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ControlDeUsuarios.WebForm4._Button1">
+<member name="F:ControlDeUsuarios.WebForm4._BuscarBtn">
 <summary>
-Control Button1.
+Control BuscarBtn.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -562,15 +544,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ControlDeUsuarios.WebForm4._ReservasBtn">
 <summary>
 Control ReservasBtn.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:ControlDeUsuarios.WebForm4._BuscarBtn">
-<summary>
-Control BuscarBtn.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -607,6 +580,15 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ControlDeUsuarios.WebForm4._HiddenField1">
 <summary>
 Control HiddenField1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm4._Button1">
+<summary>
+Control Button1.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -721,9 +703,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ControlDeUsuarios.WebForm5._HacerReservaBtn">
+<member name="F:ControlDeUsuarios.WebForm5._CheckBox1">
 <summary>
-Control HacerReservaBtn.
+Control CheckBox1.
 </summary>
 <remarks>
 Campo generado automáticamente.

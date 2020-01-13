@@ -104,13 +104,13 @@ Partial Public Class WebForm4
     Protected WithEvents MunicipioTB As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''Control Button1.
+    '''Control BuscarBtn.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents BuscarBtn As Global.System.Web.UI.WebControls.Button
     
     '''<summary>
     '''Control ReservasBtn.
@@ -120,15 +120,6 @@ Partial Public Class WebForm4
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ReservasBtn As Global.System.Web.UI.WebControls.Button
-    
-    '''<summary>
-    '''Control BuscarBtn.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents BuscarBtn As Global.System.Web.UI.WebControls.Button
     
     '''<summary>
     '''Control ResultadoTabla0.
@@ -165,4 +156,13 @@ Partial Public Class WebForm4
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents HiddenField1 As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''Control Button1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
 End Class

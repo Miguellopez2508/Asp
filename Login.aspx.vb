@@ -41,12 +41,12 @@ Public Class WebForm2
                 Session("DNI") = resultado(1)
                 Response.Redirect("FiltroBusqueda.aspx")
             Else
-                Label1.Text = "Datos incorrectos"
+                Label1.Text = "Contraseña incorrecta"
                 Me.UsuarioTB.Text = ""
                 Me.ContrasenaTB.Text = ""
             End If
         Catch
-            Label1.Text = "Datos incorrectos"
+            Label1.Text = "Usuario incorrecto"
         End Try
     End Sub
 
@@ -74,4 +74,5 @@ Public Class WebForm2
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
 
     End Sub
+
 End Class

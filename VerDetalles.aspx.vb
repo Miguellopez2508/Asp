@@ -73,6 +73,10 @@ Public Class WebForm5
                 Dim resultado As MySqlDataReader
                 resultado = comando.ExecuteReader
                 connection.Close()
+                Dim ask As MsgBoxResult = MsgBox("RESERVA REALIZADA", MsgBoxStyle.OkOnly)
+                If ask = MsgBoxResult.Ok Then
+                    Response.Redirect("FiltroBusqueda.aspx")
+                End If
             Else
                 MsgBox("ORDEN DE FECHAS INCORRECTA")
             End If
@@ -82,7 +86,11 @@ Public Class WebForm5
 
     End Sub
 
-    Protected Sub HacerReservaBtn_Click(sender As Object, e As EventArgs) Handles HacerReservaBtn.Click
-        Me.Panel1.Visible = True
+    Protected Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+        If Me.CheckBox1.Checked Then
+            Me.Panel1.Visible = True
+        Else
+            Me.Panel1.Visible = False
+        End If
     End Sub
 End Class
