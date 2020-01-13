@@ -113,15 +113,6 @@ Partial Public Class WebForm4
     Protected WithEvents BuscarBtn As Global.System.Web.UI.WebControls.Button
     
     '''<summary>
-    '''Control ReservasBtn.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents ReservasBtn As Global.System.Web.UI.WebControls.Button
-    
-    '''<summary>
     '''Control ResultadoTabla0.
     '''</summary>
     '''<remarks>
@@ -156,6 +147,15 @@ Partial Public Class WebForm4
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents HiddenField1 As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''Control ReservasBtn.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ReservasBtn As Global.System.Web.UI.WebControls.Button
     
     '''<summary>
     '''Control Button1.

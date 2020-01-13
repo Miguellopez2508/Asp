@@ -71,7 +71,16 @@ input[type="checkbox"]:after{
 input:checked[type="checkbox"]:after {
   left:110px;
 }
+#form1{
+    text-align:center;
+    margin:auto;
+}
+.label{
+    background-color:black;
+    color:white;
+    width:auto;
 
+}
         </style>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
@@ -80,41 +89,41 @@ input:checked[type="checkbox"]:after {
     <form id="form1" runat="server">
         <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="TipoLabel" runat="server" Text="Tipo"></asp:Label>
+            <asp:Label ID="TipoLabel" runat="server" Text="Tipo" class="label"> </asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="NombreLabel" runat="server" Text="NOMBRE"></asp:Label>
+            <asp:Label ID="NombreLabel" runat="server" Text="NOMBRE" class="label"></asp:Label>
             <br />
 &nbsp;&nbsp;
             <br />
             <div class="auto-style2">
-                <asp:Label ID="DescripcionLabel" runat="server" Text="DESCRIPCIÓN"></asp:Label>
+                <asp:Label ID="DescripcionLabel" runat="server" Text="DESCRIPCIÓN" class="label"></asp:Label>
             </div>
             <br />
-            <asp:Label ID="TelefonoLabel" runat="server" Text="TELEFONO"></asp:Label>
+            <asp:Label ID="TelefonoLabel" runat="server" Text="TELEFONO" class="label"></asp:Label>
   
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   
-                <asp:Label ID="TerritorioLabel" runat="server" Text="TERRITORIO"></asp:Label>
+                <asp:Label ID="TerritorioLabel" runat="server" Text="TERRITORIO" class="label"></asp:Label>
 
             <br />
             <br />
-            <asp:Label ID="EMailLabel" runat="server" Text="EMail"></asp:Label>
+            <asp:Label ID="EMailLabel" runat="server" Text="EMail" class="label"></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   
-                <asp:Label ID="MunicipioLabel" runat="server" Text="MUNICIPIO"></asp:Label>
+                <asp:Label ID="MunicipioLabel" runat="server" Text="MUNICIPIO" class="label"></asp:Label>
 
             <br />
             <br />
-            <asp:Label ID="WebLabel" runat="server" Text="WEB"></asp:Label>
+            <asp:Label ID="WebLabel" runat="server" Text="WEB" class="label"></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   
-                <asp:Label ID="DireccionLabel" runat="server" Text="DIRECCIÓN"></asp:Label>
+                <asp:Label ID="DireccionLabel" runat="server" Text="DIRECCIÓN" class="label"></asp:Label>
 
             <br />
             <br />
-            <asp:Label ID="CapacidadLabel" runat="server" Text="CAPACIDAD"></asp:Label>
+            <asp:Label ID="CapacidadLabel" runat="server" Text="CAPACIDAD" class="label"></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="CodigoPostalLabel" runat="server" Text="CÓDIGO_POSTAL"></asp:Label>
+            <asp:Label ID="CodigoPostalLabel" runat="server" Text="CÓDIGO_POSTAL" class="label"></asp:Label>
             <br />
             <br />
         <br />

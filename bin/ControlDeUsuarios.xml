@@ -46,24 +46,6 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ControlDeUsuarios.WebForm1._Label1">
-<summary>
-Control Label1.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:ControlDeUsuarios.WebForm1._Label2">
-<summary>
-Control Label2.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:ControlDeUsuarios.WebForm1._TextBox1">
 <summary>
 Control TextBox1.
@@ -85,15 +67,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ControlDeUsuarios.WebForm1._RegularExpressionValidator1">
 <summary>
 Control RegularExpressionValidator1.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:ControlDeUsuarios.WebForm1._Label3">
-<summary>
-Control Label3.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -127,15 +100,6 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ControlDeUsuarios.WebForm1._Label5">
-<summary>
-Control Label5.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:ControlDeUsuarios.WebForm1._TextBox3">
 <summary>
 Control TextBox3.
@@ -157,15 +121,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ControlDeUsuarios.WebForm1._RegularExpressionValidator3">
 <summary>
 Control RegularExpressionValidator3.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:ControlDeUsuarios.WebForm1._Label4">
-<summary>
-Control Label4.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -199,15 +154,6 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ControlDeUsuarios.WebForm1._Label9">
-<summary>
-Control Label9.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:ControlDeUsuarios.WebForm1._TextBox5">
 <summary>
 Control TextBox5.
@@ -235,15 +181,6 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ControlDeUsuarios.WebForm1._Label6">
-<summary>
-Control Label6.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:ControlDeUsuarios.WebForm1._TextBox6">
 <summary>
 Control TextBox6.
@@ -256,15 +193,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ControlDeUsuarios.WebForm1._RequiredFieldValidator5">
 <summary>
 Control RequiredFieldValidator5.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:ControlDeUsuarios.WebForm1._Label7">
-<summary>
-Control Label7.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -334,45 +262,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ControlDeUsuarios.WebForm2._MensajeBienvenidaLabel">
-<summary>
-Control MensajeBienvenidaLabel.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:ControlDeUsuarios.WebForm2._UsuarioLabel">
-<summary>
-Control UsuarioLabel.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:ControlDeUsuarios.WebForm2._UsuarioTB">
 <summary>
 Control UsuarioTB.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:ControlDeUsuarios.WebForm2._RequiredFieldValidator1">
-<summary>
-Control RequiredFieldValidator1.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:ControlDeUsuarios.WebForm2._ContrasenaLabel">
-<summary>
-Control ContrasenaLabel.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -388,9 +280,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ControlDeUsuarios.WebForm2._RequiredFieldValidator2">
+<member name="F:ControlDeUsuarios.WebForm2._InicioSesionBtn">
 <summary>
-Control RequiredFieldValidator2.
+Control InicioSesionBtn.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -400,15 +292,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ControlDeUsuarios.WebForm2._Label1">
 <summary>
 Control Label1.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:ControlDeUsuarios.WebForm2._InicioSesionBtn">
-<summary>
-Control InicioSesionBtn.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -427,6 +310,24 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ControlDeUsuarios.WebForm2._Button2">
 <summary>
 Control Button2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm2._RequiredFieldValidator1">
+<summary>
+Control RequiredFieldValidator1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm2._RequiredFieldValidator2">
+<summary>
+Control RequiredFieldValidator2.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -541,15 +442,6 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ControlDeUsuarios.WebForm4._ReservasBtn">
-<summary>
-Control ReservasBtn.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:ControlDeUsuarios.WebForm4._ResultadoTabla0">
 <summary>
 Control ResultadoTabla0.
@@ -580,6 +472,15 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ControlDeUsuarios.WebForm4._HiddenField1">
 <summary>
 Control HiddenField1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ControlDeUsuarios.WebForm4._ReservasBtn">
+<summary>
+Control ReservasBtn.
 </summary>
 <remarks>
 Campo generado automáticamente.
